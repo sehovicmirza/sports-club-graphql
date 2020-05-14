@@ -1,0 +1,59 @@
+  // create training for teams
+    mutation {
+      createTraining(input: {
+        schedule: "foo",
+        startsAt: "2021-07-16T19:00:00Z",
+        teamIds: [1,2] 
+      }) {
+        training {
+          schedule,
+          startsAt,
+          teams {
+            name
+          }
+        }
+        errors
+      }
+    }
+
+  // destroy training
+    mutation {
+      destroyTraining(input: { id: 21 } ) {
+        schedule,
+        startsAt,
+        teams {
+          name
+        }
+      }
+    }
+
+ // fetch players attendance rate for player
+  {
+    player(id: 1) {
+      name
+      email
+      attendanceRate(
+        gameDay: "2020-11-06T00:00:00Z"
+        wholeSeason: true
+      )
+    }
+  }
+
+  // fetch upcomming schedule for player
+  {
+    player(id: 1) {
+      name
+      email
+      attendanceRate(
+        gameDay: "2020-11-06T00:00:00Z"
+        wholeSeason: true
+      )
+      upcommingSchedule(limit: 20) {
+        schedule
+        startsAt
+        teams {
+          name
+        }
+      }
+    }
+  }
