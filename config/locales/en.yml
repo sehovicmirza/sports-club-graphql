@@ -30,4 +30,8 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  custom_errors:
+    invalid_attendance_update: "Attendance can only be updated for training session in the future."
+    invalid_training_create:   "Training session should concern 1 or 2 teams."
+    invalid_training_delete:   "Specified training doesn't exist or it has already been deleted."
+

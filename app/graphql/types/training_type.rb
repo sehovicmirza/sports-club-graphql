@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   class TrainingType < Types::BaseObject
     field :schedule, String, null: true

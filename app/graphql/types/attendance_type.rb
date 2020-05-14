@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   # TODO: Handle polymorphic association
   class AttendanceType < Types::BaseObject
