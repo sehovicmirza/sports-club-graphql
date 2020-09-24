@@ -1,3 +1,6 @@
+# PROJECT REQUIREMENTS
+Click [here](PROBLEM_STATEMENT.md) to read the project requirements
+
 # TESTING GUIDE
 
 # Setup
